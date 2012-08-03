@@ -1,6 +1,61 @@
-*.class
-*.jar
-.classpath
-.project
+# Compiled source (excluding lib external library folder) #
+###################
 bin
+out
+target
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
+# Git #
+#######
+.git
+
+# Packages (excluding jar files) #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Project files #
+#################
+.classpath
+.externalToolBuilders
+.project
+.settings
+MANIFEST.MF
+
+# Netbeans files #
+##################
+build
+dist
+nbproject
+build.xml
+nb-configuration.xml
+
+# IntelliJ IDEA files #
+#######################
+.idea
+*.iml
+*.ipr
+*.iws
