@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>net.teamio</groupId>
 			<artifactId>commonlib</artifactId>
-			<version>b120</version>
+			<version>dev-SNAPSHOT</version>
             <scope>compile</scope>
 		</dependency>
 	</dependencies>
