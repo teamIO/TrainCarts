@@ -49,6 +49,18 @@
 			<version>dev-SNAPSHOT</version>
             <scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>net.teamio</groupId>
+			<artifactId>signlink</artifactId>
+			<version>dev-SNAPSHOT</version>
+            <scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.teamio</groupId>
+			<artifactId>myworlds</artifactId>
+			<version>dev-SNAPSHOT</version>
+            <scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 	<!-- Build settings -->
@@ -125,6 +137,8 @@
 							<artifactSet>
 								<excludes>
 									<exclude>org.bukkit:*</exclude>
+									<exclude>net.teamio:signlink</exclude>
+									<exclude>net.teamio:myworlds</exclude>
 								</excludes>
 							</artifactSet>
 							<filters>

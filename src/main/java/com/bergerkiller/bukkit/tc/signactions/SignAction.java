@@ -35,7 +35,6 @@ public abstract class SignAction {
 		register(new SignActionBlock());
 		register(new SignActionWait());
 		register(new SignActionElevator());
-		register(new SignActionTicket());
 		register(new SignActionAnnounce());
 	}
 	public static void deinit() {

@@ -81,7 +81,6 @@ public class TrainCarts extends PluginBase {
 	public static final ShortcutMap messageShortcuts = new ShortcutMap();
 	public static final ShortcutMap statementShortcuts = new ShortcutMap();
 	
-	public static boolean EssentialsEnabled = false;
 	public static boolean SignLinkEnabled = false;
 	public static boolean MinecartManiaEnabled = false;
 	public static boolean MyWorldsEnabled = false;
@@ -295,8 +294,6 @@ public class TrainCarts extends PluginBase {
 			if (MyWorldsEnabled = enabled) {
 				log(Level.INFO, "MyWorlds detected, support for portal sign train teleportation added!");
 			}
-		} else if (pluginName.equals("Essentials")) {
-			EssentialsEnabled = enabled;
 		}
 	}
 
