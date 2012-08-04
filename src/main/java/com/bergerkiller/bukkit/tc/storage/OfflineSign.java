@@ -1,13 +1,13 @@
 package com.bergerkiller.bukkit.tc.storage;
 
+import net.minecraft.server.ChunkCoordinates;
+
 import org.bukkit.World;
 import org.bukkit.block.Block;
 
 import com.bergerkiller.bukkit.common.utils.BlockUtil;
 import com.bergerkiller.bukkit.common.utils.WorldUtil;
 import com.bergerkiller.bukkit.tc.events.SignActionEvent;
-
-import net.minecraft.server.ChunkCoordinates;
 
 public abstract class OfflineSign {
 

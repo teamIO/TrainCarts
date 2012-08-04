@@ -14,19 +14,19 @@ import org.bukkit.block.Sign;
 
 import com.bergerkiller.bukkit.common.BlockMap;
 import com.bergerkiller.bukkit.common.Task;
-import com.bergerkiller.bukkit.tc.Permission;
-import com.bergerkiller.bukkit.tc.TrainCarts;
-import com.bergerkiller.bukkit.tc.Util;
 import com.bergerkiller.bukkit.common.config.DataReader;
 import com.bergerkiller.bukkit.common.config.DataWriter;
 import com.bergerkiller.bukkit.common.utils.BlockUtil;
 import com.bergerkiller.bukkit.common.utils.FaceUtil;
 import com.bergerkiller.bukkit.common.utils.StreamUtil;
-import com.bergerkiller.bukkit.tc.signactions.detector.DetectorSignPair;
-import com.bergerkiller.bukkit.tc.utils.TrackMap;
+import com.bergerkiller.bukkit.tc.Permission;
+import com.bergerkiller.bukkit.tc.TrainCarts;
+import com.bergerkiller.bukkit.tc.Util;
 import com.bergerkiller.bukkit.tc.detector.DetectorRegion;
 import com.bergerkiller.bukkit.tc.events.SignActionEvent;
 import com.bergerkiller.bukkit.tc.events.SignChangeActionEvent;
+import com.bergerkiller.bukkit.tc.signactions.detector.DetectorSignPair;
+import com.bergerkiller.bukkit.tc.utils.TrackMap;
 
 public class SignActionDetector extends SignAction {
 	public static void removeDetector(Block at) {

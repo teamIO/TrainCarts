@@ -2,8 +2,8 @@ package com.bergerkiller.bukkit.tc.actions;
 
 import org.bukkit.Location;
 
-import com.bergerkiller.bukkit.tc.controller.MinecartMember;
 import com.bergerkiller.bukkit.common.utils.FaceUtil;
+import com.bergerkiller.bukkit.tc.controller.MinecartMember;
 
 public class MemberActionLaunchLocation extends MemberActionLaunchDirection implements VelocityAction {
 

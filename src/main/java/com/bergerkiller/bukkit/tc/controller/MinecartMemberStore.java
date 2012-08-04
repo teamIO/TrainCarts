@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
+import net.minecraft.server.ChunkCoordinates;
+import net.minecraft.server.EntityMinecart;
+import net.minecraft.server.World;
+
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -23,10 +27,6 @@ import com.bergerkiller.bukkit.common.utils.WorldUtil;
 import com.bergerkiller.bukkit.tc.Util;
 import com.bergerkiller.bukkit.tc.events.MinecartSwapEvent;
 import com.bergerkiller.bukkit.tc.properties.CartProperties;
-
-import net.minecraft.server.ChunkCoordinates;
-import net.minecraft.server.EntityMinecart;
-import net.minecraft.server.World;
 
 public class MinecartMemberStore extends NativeMinecartMember {
 

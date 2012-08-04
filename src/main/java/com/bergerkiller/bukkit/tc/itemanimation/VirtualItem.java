@@ -1,14 +1,14 @@
 package com.bergerkiller.bukkit.tc.itemanimation;
 
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityItem;
+import net.minecraft.server.World;
+
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
 
 import com.bergerkiller.bukkit.common.utils.ItemUtil;
 import com.bergerkiller.bukkit.common.utils.WorldUtil;
-
-import net.minecraft.server.EntityHuman;
-import net.minecraft.server.EntityItem;
-import net.minecraft.server.World;
 
 /**
  * A dummy class that basically does nothing :)

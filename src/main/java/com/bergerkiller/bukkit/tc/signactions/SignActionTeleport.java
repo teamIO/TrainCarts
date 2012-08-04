@@ -4,6 +4,7 @@ import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 
+import com.bergerkiller.bukkit.common.utils.BlockUtil;
 import com.bergerkiller.bukkit.mw.MyWorlds;
 import com.bergerkiller.bukkit.mw.Portal;
 import com.bergerkiller.bukkit.tc.Permission;
@@ -12,7 +13,6 @@ import com.bergerkiller.bukkit.tc.Util;
 import com.bergerkiller.bukkit.tc.events.SignActionEvent;
 import com.bergerkiller.bukkit.tc.events.SignChangeActionEvent;
 import com.bergerkiller.bukkit.tc.utils.BlockTimeoutMap;
-import com.bergerkiller.bukkit.common.utils.BlockUtil;
 
 public class SignActionTeleport extends SignAction {
 

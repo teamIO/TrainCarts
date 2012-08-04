@@ -2,8 +2,8 @@ package com.bergerkiller.bukkit.tc.signactions;
 
 import org.bukkit.block.BlockFace;
 
-import com.bergerkiller.bukkit.tc.Permission;
 import com.bergerkiller.bukkit.tc.Direction;
+import com.bergerkiller.bukkit.tc.Permission;
 import com.bergerkiller.bukkit.tc.actions.Action;
 import com.bergerkiller.bukkit.tc.actions.GroupActionWaitState;
 import com.bergerkiller.bukkit.tc.events.SignActionEvent;

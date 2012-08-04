@@ -6,6 +6,23 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 
+import net.minecraft.server.AxisAlignedBB;
+import net.minecraft.server.Block;
+import net.minecraft.server.BlockMinecartTrack;
+import net.minecraft.server.DamageSource;
+import net.minecraft.server.Entity;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityItem;
+import net.minecraft.server.EntityLiving;
+import net.minecraft.server.EntityMinecart;
+import net.minecraft.server.EntityPlayer;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.MathHelper;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.Vec3D;
+import net.minecraft.server.World;
+
 import org.bukkit.Location;
 import org.bukkit.block.BlockFace;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
@@ -29,23 +46,6 @@ import com.bergerkiller.bukkit.tc.MemberDeadException;
 import com.bergerkiller.bukkit.tc.TrainCarts;
 import com.bergerkiller.bukkit.tc.Util;
 import com.bergerkiller.bukkit.tc.properties.TrainProperties;
-
-import net.minecraft.server.AxisAlignedBB;
-import net.minecraft.server.Block;
-import net.minecraft.server.BlockMinecartTrack;
-import net.minecraft.server.DamageSource;
-import net.minecraft.server.Entity;
-import net.minecraft.server.EntityHuman;
-import net.minecraft.server.EntityItem;
-import net.minecraft.server.EntityLiving;
-import net.minecraft.server.EntityPlayer;
-import net.minecraft.server.Item;
-import net.minecraft.server.ItemStack;
-import net.minecraft.server.MathHelper;
-import net.minecraft.server.NBTTagCompound;
-import net.minecraft.server.Vec3D;
-import net.minecraft.server.World;
-import net.minecraft.server.EntityMinecart;
 
 @SuppressWarnings("rawtypes")
 public class NativeMinecartMember extends EntityMinecart {

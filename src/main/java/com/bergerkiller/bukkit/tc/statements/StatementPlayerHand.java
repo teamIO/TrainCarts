@@ -2,10 +2,10 @@ package com.bergerkiller.bukkit.tc.statements;
 
 import java.util.ArrayList;
 
-import org.bukkit.inventory.Inventory;
-
 import net.minecraft.server.EntityPlayer;
 import net.minecraft.server.ItemStack;
+
+import org.bukkit.inventory.Inventory;
 
 import com.bergerkiller.bukkit.common.SimpleInventory;
 import com.bergerkiller.bukkit.tc.controller.MinecartGroup;

@@ -47,19 +47,26 @@
 			<groupId>net.teamio</groupId>
 			<artifactId>commonlib</artifactId>
 			<version>dev-SNAPSHOT</version>
-            <scope>compile</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.teamio</groupId>
 			<artifactId>signlink</artifactId>
 			<version>dev-SNAPSHOT</version>
-            <scope>compile</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.teamio</groupId>
 			<artifactId>myworlds</artifactId>
 			<version>dev-SNAPSHOT</version>
-            <scope>compile</scope>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<type>jar</type>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

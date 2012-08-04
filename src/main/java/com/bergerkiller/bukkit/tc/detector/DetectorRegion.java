@@ -13,20 +13,20 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Level;
 
+import net.minecraft.server.ChunkCoordinates;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 
 import com.bergerkiller.bukkit.common.BlockMap;
-import com.bergerkiller.bukkit.tc.TrainCarts;
-import com.bergerkiller.bukkit.tc.controller.MinecartGroup;
-import com.bergerkiller.bukkit.tc.controller.MinecartMember;
 import com.bergerkiller.bukkit.common.config.DataReader;
 import com.bergerkiller.bukkit.common.config.DataWriter;
 import com.bergerkiller.bukkit.common.utils.BlockUtil;
 import com.bergerkiller.bukkit.common.utils.StreamUtil;
-
-import net.minecraft.server.ChunkCoordinates;
+import com.bergerkiller.bukkit.tc.TrainCarts;
+import com.bergerkiller.bukkit.tc.controller.MinecartGroup;
+import com.bergerkiller.bukkit.tc.controller.MinecartMember;
 
 public final class DetectorRegion {
 	private static List<DetectorListener> listenerBuffer = new ArrayList<DetectorListener>();

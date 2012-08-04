@@ -4,12 +4,26 @@ import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 
+import net.minecraft.server.DataWatcher;
+import net.minecraft.server.EntityPlayer;
+import net.minecraft.server.EntityTracker;
+import net.minecraft.server.EntityTrackerEntry;
+import net.minecraft.server.IntHashMap;
+import net.minecraft.server.MathHelper;
+import net.minecraft.server.Packet23VehicleSpawn;
+import net.minecraft.server.Packet28EntityVelocity;
+import net.minecraft.server.Packet29DestroyEntity;
+import net.minecraft.server.Packet31RelEntityMove;
+import net.minecraft.server.Packet32EntityLook;
+import net.minecraft.server.Packet33RelEntityMoveLook;
+import net.minecraft.server.Packet34EntityTeleport;
+import net.minecraft.server.Packet39AttachEntity;
+import net.minecraft.server.Packet40EntityMetadata;
+
 import com.bergerkiller.bukkit.common.SafeField;
 import com.bergerkiller.bukkit.common.utils.MathUtil;
 import com.bergerkiller.bukkit.common.utils.WorldUtil;
 import com.bergerkiller.bukkit.tc.TrainCarts;
-
-import net.minecraft.server.*;
 
 @SuppressWarnings({"unchecked", "rawtypes"})
 public class MinecartMemberTrackerEntry extends EntityTrackerEntry {
