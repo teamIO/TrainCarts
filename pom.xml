@@ -144,8 +144,9 @@
 							<artifactSet>
 								<excludes>
 									<exclude>org.bukkit:*</exclude>
-									<exclude>net.teamio:signlink</exclude>
+									<exclude>org.getspout:*</exclude>
 									<exclude>net.teamio:myworlds</exclude>
+									<exclude>net.teamio:signlink</exclude>
 								</excludes>
 							</artifactSet>
 							<filters>

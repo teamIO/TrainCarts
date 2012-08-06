@@ -171,14 +171,15 @@ public class Util {
 	
     public static boolean canDistractWire(Material type) {
 		switch (type) {
-		case REDSTONE_WIRE : return true;
-		case REDSTONE_TORCH_ON : return true;
-		case REDSTONE_TORCH_OFF : return true;
-		case LEVER : return true;
-		case WOOD_PLATE : return true;
-		case STONE_PLATE : return true;
-		case STONE_BUTTON : return true;
-		case DETECTOR_RAIL : return true;
+		case REDSTONE_WIRE:
+		case REDSTONE_TORCH_ON:
+		case REDSTONE_TORCH_OFF:
+		case LEVER:
+		case WOOD_PLATE:
+		case STONE_PLATE:
+		case STONE_BUTTON:
+		case DETECTOR_RAIL:
+			return true;
 		}
 		return false;
     }
@@ -309,22 +310,7 @@ public class Util {
 	}
 
 	public static String replaceColors(String line) {
-		int index = 0;
-		while (true) {
-			index = line.indexOf('&', index);
-			if (index >= 0 && index < line.length() - 1) {
-				char next = line.charAt(index + 1);
-				if (next == '0' || next == '1' || next == '2' || next == '3' || next == '4' ||
-						next == '5' || next == '6' || next == '7' || next == '8' || next == '9' ||
-						next == 'a' || next == 'b' || next == 'c' || next == 'd' || next == 'e' || next == 'f') {
-					line = line.substring(0, index) + '§' + line.substring(index + 1);
-				}
-				index++;
-			} else {
-				break;
-			}
-		}
-		return line;
+		return line.replaceAll("&([a-z0-9])", "\u00A7$1");
 	}
 	public static boolean evaluate(double value, String text) {
 		if (text == null || text.isEmpty()) {
