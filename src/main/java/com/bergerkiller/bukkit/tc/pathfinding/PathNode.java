@@ -65,6 +65,8 @@ public class PathNode {
 	public static PathNode getOrCreate(SignActionEvent event) {
 		if (event.isType("destination")) {
 			//get this destination name
+			if (event.getLine(2)==null)
+				return getOrCreate(event.getRails());
 			return getOrCreate(event.getLine(2), event.getRails());
 		} else {
 			//create from location

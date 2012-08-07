@@ -10,14 +10,18 @@ import com.bergerkiller.bukkit.tc.properties.TrainProperties;
 public class SignActionDestination extends SignAction {
 	
 	public void setDestination(CartProperties prop, SignActionEvent info) {
-		if (!info.isAction(SignActionType.REDSTONE_CHANGE)) {
-			if (!info.getLine(2).isEmpty() && prop.hasDestination()) {
-				if (!info.getLine(2).equals(prop.getDestination())) {
-					return;
-				}
-			}
+		
+		// for carts with no destinations set
+		if (info.getLine(2).isEmpty()){
+			if (!prop.hasDestination()) // cart doesn't have destination, then set destination
+				prop.setDestination(info.getLine(3));
+		} else { // carts with destinations set
+			if (!prop.hasDestination()) // cart doesn't have destination, ignore
+				return;
+			if (info.getLine(2).equals(prop.getDestination())) // line 3 of sign is the cart's destination, set new dest
+				prop.setDestination(info.getLine(3));
 		}
-		prop.setDestination(info.getLine(3));
+		
 	}
 	
 	@Override

@@ -1,6 +1,45 @@
 package com.bergerkiller.bukkit.tc.signactions;
 
 public enum SignActionType {
-	REDSTONE_CHANGE, REDSTONE_ON, REDSTONE_OFF, MEMBER_ENTER, MEMBER_MOVE, MEMBER_LEAVE, GROUP_ENTER, GROUP_LEAVE,
-	MEMBER_UPDATE, GROUP_UPDATE;
+	
+	/**
+	 * Redstone state changes
+	 */
+	REDSTONE_CHANGE,
+	/**
+	 * Powered by Redstone
+	 */
+	REDSTONE_ON,
+	/**
+	 * Not powered by Redstone
+	 */
+	REDSTONE_OFF,
+	/**
+	 * Cart member enters
+	 */
+	MEMBER_ENTER,
+	/**
+	 * Cart member moves
+	 */
+	MEMBER_MOVE,
+	/**
+	 * Cart member leaves
+	 */
+	MEMBER_LEAVE,
+	/**
+	 * Train enters
+	 */
+	GROUP_ENTER,
+	/**
+	 * Train leaves
+	 */
+	GROUP_LEAVE,
+	/**
+	 * Cart member is updated (properties?)
+	 */
+	MEMBER_UPDATE,
+	/**
+	 * Train member is updated (properties?)
+	 */
+	GROUP_UPDATE;
 }

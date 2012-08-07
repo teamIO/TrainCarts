@@ -296,7 +296,10 @@ public class CartProperties extends CartPropertiesStore implements IProperties {
 
 	@Override
 	public void setDestination(String destination) {
-		this.destination = destination == null ? "" : destination;
+		if (destination!=null)
+			this.destination = destination;
+		else
+			this.destination = "";
 	}
 
 	@Override
@@ -360,7 +363,8 @@ public class CartProperties extends CartPropertiesStore implements IProperties {
 		for (String tag : node.getList("tags", String.class)) {
 			this.tags.add(tag);
 		}
-		this.destination = node.get("destination", this.destination);
+		if (this.destination==null || this.destination.isEmpty())
+			this.destination = node.get("destination", this.destination);
 		this.allowMobsEnter = node.get("allowMobsEnter", this.allowMobsEnter);
 		this.allowPlayerEnter = node.get("allowPlayerEnter", this.allowPlayerEnter);
 		this.allowPlayerExit = node.get("allowPlayerExit", this.allowPlayerExit);
